@@ -14,12 +14,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // ৩ সেকেন্ড পর হোম পেজে যাবে
+    // 3 Seccend Dily
     Timer(Duration(seconds: 3), () {
       if (mounted) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) =>  Home_page()), // নিশ্চিত করুন ক্লাসের নাম HomePage কি না
+          MaterialPageRoute(builder: (context) =>   Home_page()), 
         );
       }
     });
