@@ -28,40 +28,42 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override 
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.bottomCenter,
-                end: Alignment.topCenter,
-                colors: [Color(0xFFEF2A39), Color.fromARGB(255, 248, 134, 144)],
-                stops: [0.4, 1.0],
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  colors: [Color(0xFFEF2A39), Color.fromARGB(255, 248, 134, 144)],
+                  stops: [0.4, 1.0],
+                ),
               ),
+              height: double.infinity,
+              width: double.infinity,
             ),
-            height: double.infinity,
-            width: double.infinity,
-          ),
-
-          SizedBox(height: 600, child: Image.asset('images/foodgo.png')),
-
-          Stack(
-            children: [
-             
-               Container(
-                  alignment:  Alignment.bottomLeft,
-                  child: Image.asset('images/image2.png'),
-                ),
-                Container(
-                  alignment: Alignment.bottomCenter,
-                  child: Image.asset('images/image1.png'),
-                ),
-            
-             
-            ],
-          ),
-        ],
+      
+            SizedBox(height: 600, child: Image.asset('assets/images/Foodgo.png')),
+      
+            Stack(
+              children: [
+               
+                 Container(
+                    alignment:  Alignment.bottomLeft,
+                    child: Image.asset('assets/images/image2.png'),
+                  ),
+                  Container(
+                    alignment: Alignment.bottomCenter,
+                    child: Image.asset('assets/images/image1.png'),
+                  ),
+              
+               
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

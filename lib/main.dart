@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:foodgo/Pages/home_page.dart';
 import 'package:foodgo/Pages/splash_screen.dart';
 
 void main() => runApp(const MyApp());

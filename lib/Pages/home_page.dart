@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:foodgo/Pages/Page1.dart';
 
@@ -22,6 +24,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Page1(),
       bottomNavigationBar: BottomAppBar(
+        height: 60,
         color: Color(0xFFEF2A39),
         shape: CircularNotchedRectangle(), // Round Gap here----
         notchMargin: 8.0,
@@ -30,8 +33,10 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
+              
               icon: Image.asset('assets/images/home.png'),
-              color: _currentIndex == 0 ? Colors.white : Colors.black,
+             
+              color: _currentIndex == 0 ? Colors.white : Colors.white,
               onPressed: () {
                 _onItemTapped(0);
               },
@@ -65,15 +70,15 @@ class _HomePageState extends State<HomePage> {
 
       extendBody: true,
       floatingActionButton: SizedBox(
-        height: 80,
-        width: 80,
+        height: 60,
+        width: 60,
         child: FloatingActionButton(
           backgroundColor: Color(0xFFEF2A39),
 
           onPressed: () {},
           shape: CircleBorder(),
           elevation: 15,
-          child: Image.asset('assets/images/plus.png'),
+          child: Image.asset('assets/images/plus.png', scale: 1.1 ,),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
