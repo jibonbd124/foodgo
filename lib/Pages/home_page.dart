@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             IconButton(
               icon: Image.asset('assets/images/home.png'),
-              color: _currentIndex == 0 ? Colors.white : Colors.black,
+              color: _currentIndex == 0 ? Colors.white : Colors.white,
               onPressed: () {
                 _onItemTapped(0);
               },
