@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Page1(),
       bottomNavigationBar: BottomAppBar(
         height: 60,
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
 
-      extendBody: true,
+      extendBody: false,
       floatingActionButton: SizedBox(
         height: 60,
         width: 60,
@@ -82,6 +83,9 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      
+      
+      
     );
   }
 }
